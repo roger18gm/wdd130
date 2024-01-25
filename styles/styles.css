@@ -2,8 +2,24 @@ body {
     background-color: lightblue;
 }
 
+.nav_link{
+    padding: 50px;
+    font-size: 10em;
+}
 a{
     padding: 10px;
-    color: black;
+    color: red;
     font-size: 2em;
+}
+
+img {
+    width: 300px;
+}
+
+#main_title{
+    font-size: 4em;
+}
+
+#sub_title{
+    color: red;
 }
