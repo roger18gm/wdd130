@@ -1,25 +1,67 @@
+/* * {
+    border: 2px solid red;
+}*/
+
+
 body {  
-    background-color: lightblue;
+    background-color: rgb(129, 65, 89);
+    margin: 0;
+    padding: 0;
 }
 
+#content {
+    max-width: 1200px;
+    margin:0 auto;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    /*justify-content: center; <--- flex box or grid ONLY */
+}
 .nav_link{
-    padding: 50px;
-    font-size: 10em;
+    padding: 30px;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-align: center;
 }
 a{
     padding: 10px;
-    color: red;
-    font-size: 2em;
+    color: white;
+    font-size: 1.5em;
+}
+
+main{
+    background-color: white;
+    padding: 30px;
 }
 
 img {
-    width: 300px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    
 }
+
+p{
+    text-align: center;
+}
+a:hover{
+    color: rgb(129, 65, 89);
+    background-color: white;
+ }
 
 #main_title{
     font-size: 4em;
+    text-align: center;
 }
 
 #sub_title{
-    color: red;
+    color: rgb(129, 65, 89);
+    text-align: center;
+    font-size: 2.5em;
+}
+
+footer {
+    padding: 30px;
+    color: white;
 }
