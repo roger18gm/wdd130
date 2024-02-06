@@ -1,12 +1,15 @@
 /* * {
     border: 2px solid red;
 }*/
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400&family=DM+Serif+Display&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400&family=DM+Serif+Display&family=Inter+Tight&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
 
 body {  
     background-color: rgb(129, 65, 89);
     margin: 0;
     padding: 0;
+    font-family:"News Cycle", "Inter Tight", "Titan One" ;
 }
 
 #content {
@@ -24,27 +27,39 @@ nav{
     text-decoration: none;
     text-align: center;
 }
-a{
+nav a{
     padding: 10px;
     color: white;
     font-size: 1.5em;
 }
 
+h1, h3{
+    margin: 10px;
+}
 main{
     background-color: white;
-    padding: 30px;
+    padding: 15px;
 }
 
 img {
     width: 50%;
     display: block;
     margin: 0 auto;
-    
+    border-radius: 15px;
 }
 
-p{
+main p{
     text-align: center;
+    width: 50%;
+    margin: 30px auto;
+    font-family: "Inter Tight";
+    line-height: 1.5em;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;
 }
+
 a:hover{
     color: rgb(129, 65, 89);
     background-color: white;
@@ -61,7 +76,13 @@ a:hover{
     font-size: 2.5em;
 }
 
-footer {
-    padding: 30px;
+footer p{
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+footer a {
     color: white;
 }
