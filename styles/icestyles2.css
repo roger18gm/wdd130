@@ -1,0 +1,19 @@
+.title{
+    width: 100%
+}
+
+body{
+    background-color: darkgrey;
+    margin: 0 auto;
+}
+.circles{
+    border: 15px solid gray;
+    border-radius: 50%;
+    width: 20%;
+    margin: 50px;
+}
+
+.image{
+    display:flex;
+    justify-content: center;
+}
