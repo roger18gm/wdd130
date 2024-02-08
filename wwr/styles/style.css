@@ -31,7 +31,7 @@ nav a {
 }
 
 nav a:hover{
-    background-color:#7EA086;
+    background-color:#667A75;
 }
 
 #hero-img{
@@ -81,7 +81,7 @@ h2{
     background-color: #7EA086;
 }
 .join {
-    background-color: #525252;
+    background-color: #667A75;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -91,7 +91,7 @@ h2{
 }
 
 .join:hover{
-    background-color: #7EA086;
+    background-color: #525252;
 }
 
 main section {
@@ -105,7 +105,8 @@ main section img {
     width: 80px;
 }
 .card-img {
-    border:10px solid black;
+    border:25px solid #7EA086;
+    border-radius: 5px;
 }
 .icon{
     width: 80px;
@@ -117,33 +118,34 @@ main section img {
 }
 #background {
     height: 725px;
-    background-color: #7EA086;
+    background-color: #667A75;
 }
 
 .msg{
-    background-color:#525252;
+    background-color:#667A75;
     line-height: 1.5em;
     padding: 35px;
 }
 
 .msg h2{
-    color:white;
+    color: white;
     font-family: "DM Serif Display", "Russo One";
 }
 
 .msg p {
-    color:white;
+    color: white;
     font-size: .8em;
     padding-bottom: 15px;
 }
 footer {
-    background-color: white;
+    background-color: #525252;
     padding: 25px 50px;
     margin-top: 200px;
 }
 
 footer p {
     font-size: 1em;
+    color:white;
 }
 
 /*footer p a:hover{
@@ -151,14 +153,17 @@ footer p {
 }*/
 
 footer a {
-    color:#525252;
+    color:white;
     text-decoration: none;
+    border-radius:5px;
+    padding: 15px;
 }
 
 footer a:hover{
-    background-color:#7EA086;
+    background-color:#667A75 ;
     color:white;
     text-decoration: underline;
+    
 }
 footer .social{
     padding-top:15px;
