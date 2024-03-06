@@ -71,6 +71,7 @@ h4{
 h2{
     font-family: "DM Sans Serif", "Russo One";
     margin: 0;
+    letter-spacing:1px;
 }
 #hero-msg h4 {
     text-align: center;
@@ -233,6 +234,11 @@ footer .social a:hover{
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~RIVERS CSS~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+
+#river_content {
+    max-width: 1600px;
+    margin: 0px auto;
+}
 .rivers-grid{
     display:grid;
     grid-template-columns: 1fr 1fr
@@ -241,11 +247,15 @@ h1{
     grid-column:1/3;
     grid-row:1/2;
     text-align: center;
+    border: 15px dashed #667A75;
+    margin:30px 400px;
+    font-family: "DM Serif Display";
 }
 .first-river{
     grid-column:1/2;
     grid-row: 2/3;
-    padding: 3%;
+    margin: 50px;
+    /*letter-spacing:1px;*/
 }
 /*.para-one{
     grid-column: 1/2;
@@ -255,12 +265,20 @@ h1{
     grid-column:2/3;
     grid-row:2/3;
     text-align: center;
-    padding: 10%
+    border: 25px solid #aba272;
+    border-radius: 5px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #5b563d;
+    margin: 125px 50px;
+}
+.first-river-img:hover{
+    opacity:.6;
+    transform: scale(1.1);
 }
 .second-river{
     grid-column: 2/3;
     grid-row: 3/4;
-    padding:3%;
+    margin: 75px 75px 75px 0px;
 }
 .second-river h2, .second-river p{
     color:white;
@@ -269,26 +287,42 @@ h1{
     grid-column:1/2;
     grid-row: 3/4; 
     text-align: center;
-    padding: 10%;
+    border: 25px solid #aba272;
+    border-radius: 5px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #5b563d;
+    margin: 125px;
+}
+.second-river-img:hover{
+    opacity:.6;
+    transform: scale(1.1);
 }
 #rivers-background{
     grid-column:1/3;
     grid-row:3/4;
     background-color: #667A75;
-    height:600px;
+    height:700px;
 }
 .third-river{
     grid-column:1/2;
     grid-row:4/5;
-    padding: 3%;
+    margin: 100px 50px;
 }
 .third-river-img{
     grid-column:2/3;
     grid-row:4/5;
     text-align: center;
-    padding:10%;
+    border: 25px solid #aba272;
+    border-radius: 5px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #5b563d;
+    margin:125px 80px 80px 30px;
+    width: 65%;
 }
-
+.third-river-img:hover{
+    opacity:.6;
+    transform: scale(1.1);
+}
 
 
 

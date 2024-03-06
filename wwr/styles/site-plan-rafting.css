@@ -7,12 +7,13 @@ Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400&family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #667A75   ;
-  --secondary-color: #7EA086 ;
-  --accent1-color: #525252;
+  --secondary-color: #525252 ;
+  --accent1-color: #aba272;
   --accent2-color: white;
 
   /* my color #667A75 desert sand
@@ -20,7 +21,7 @@ Fonts are separated by a & */
             https://coolors.co/896978-839791-7EA086-ffd4ca-eac6ae */
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "DM Serif Display";
+  --heading-font: "Russo One", "DM Serif Display";
   --paragraph-font: "DM Sans", sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
@@ -28,9 +29,9 @@ Fonts are separated by a & */
   --headline-color-on-color: white; /* headlines on a colored background */ 
   --paragraph-color-on-white: #525252; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #7EA086  ;
+  --paragraph-background-color: #525252;
   --nav-link-color: white;
-  --nav-background-color: #7EA086;
+  --nav-background-color: #525252;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #667A75;
 }
