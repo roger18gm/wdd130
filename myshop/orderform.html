@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galan Gear - Order Now</title>
+    <link rel="stylesheet" href="styles/galangear.css" />
+  </head>
+  <body>
+    <header>
+      <a id="logo_link" href="images/logo.png">
+        <img
+          class="logo"
+          src="images/logo.png"
+          alt="Image of Galan Gear Logo"
+        />
+      </a>
+      <nav>
+        <a href="index.html">Homepage</a>
+        <a href="productlist.html">Product List</a>
+        <a href="orderform.html">Order Now!</a>
+      </nav>
+    </header>
+    <main class="orderform">
+      <img
+        class="order_image"
+        src="images/flugame.jpeg"
+        alt="Image of Jordan 12 shoes - standalone"
+      />
+      <img
+        class="order_image"
+        src="images/j12model-v2.jpg"
+        alt="Image of model wearing Jordan 12 shoes"
+      />
+      <div id="feedback"></div>
+      <h1>Enter order information below!</h1>
+      <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input
+              type="email"
+              required
+              id="mail"
+              name="user_email"
+              placeholder="email.@here.com"
+            />
+          </li>
+          <li>
+            <label for="payment">Card:</label>
+            <input
+              type="payment"
+              required
+              id="payment"
+              name="user_card"
+              placeholder="ABCD EFGH IJKL"
+            />
+          </li>
+          <li>
+            <label for="address">Address:</label>
+            <input type="address" required id="address" name="user_address" />
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </ul>
+      </form>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/vzxH4pQCtMI?si=aTdrbpCX6zLX_sJ4&amp;start=2"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <h2>Description:</h2>
+      <p>
+        Air Jordan 12 Retro “Flu Game” 2016 Men’s Size: 8 US, 41 EU. SKU: 130690
+        002 Colors: Black,Red The Air Jordan 12 "Flu Game" is a black and red
+        basketball shoe designed by Nike. It features a black tumbled leather
+        upper with varsity red on the mudguard and outsole. This iconic sneaker
+        has not only lasted long in popularity but it's design also holds with
+        regards to material and build. These could be worn on the court and
+        beyond as a staple in men's streetwear Michael Jordan wore this specific
+        colorway during the 5th game of the NBA Final in 1997. During playing
+        time, Jordan was thought to have been suffering from the flu but later
+        it was revealed that it was food poisoning. Michael and his team, the
+        Chicago Bulls, would eventually win the game!
+      </p>
+    </main>
+    <footer>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/Facebook_icon.png" alt="fb icon" />
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter-x-logo-.png" alt="twitter icon" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/Instagram_icon.png.webp" alt="instagram icon" />
+        </a>
+      </div>
+      <p>Galan Gear &copy; 2024 - Roger Galan Manzano</p>
+    </footer>
+    <script>
+      // get the feedback div element so we can do something with it.
+      const feedbackElement = document.getElementById("feedback");
+      // get the form so we can read what was entered in it.
+      const formElement = document.forms[0];
+      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+      formElement.addEventListener("submit", function (e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML =
+          "Hello " +
+          formElement.user_name.value +
+          "! Thank you for your order! Order details and further correspondence will be sent to your email.";
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle("moveDown");
+      });
+    </script>
+  </body>
+</html>
