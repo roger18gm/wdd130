@@ -153,3 +153,40 @@ footer p a:hover{
     background-color: #292929;
     color:#e4e2dd;
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~PRODUCT LIST~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.products-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.products{
+    grid-column: 1/4;
+}
+.item-card{
+    text-align: center;
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+.text{
+    text-align: center;
+    background-color: #e4e2dd;
+    padding: 50px;
+}
+.product_image{
+    border: 25px solid #7c7c7c;
+    width: 80%;
+    transition: transform 1s;
+}
+.product_image:hover{
+    transform: scale(1.1);
+}
+#background2{
+    background-color: #7c7c7c;
+    grid-column:1/4;
+    grid-row:3/4;
+    z-index: 1;
+}
