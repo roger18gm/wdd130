@@ -21,93 +21,101 @@
         <a href="orderform.html">Order Now!</a>
       </nav>
     </header>
-    <main class="orderform">
-      <img
-        class="order_image"
-        src="images/flugame.jpeg"
-        alt="Image of Jordan 12 shoes - standalone"
-      />
-      <img
-        class="order_image"
-        src="images/j12model-v2.jpg"
-        alt="Image of model wearing Jordan 12 shoes"
-      />
-      <div id="feedback"></div>
-      <h1>Enter order information below!</h1>
-      <form action="/my-handling-form-page" method="post">
-        <ul>
-          <li>
-            <label for="name">Name :</label>
-            <input type="text" id="name" name="user_name" />
-          </li>
-          <li>
-            <label for="mail">Email:</label>
-            <input
-              type="email"
-              required
-              id="mail"
-              name="user_email"
-              placeholder="email.@here.com"
-            />
-          </li>
-          <li>
-            <label for="payment">Card:</label>
-            <input
-              type="number"
-              required
-              id="payment"
-              name="user_card"
-            />
-          </li>
-          <li>
-            <label for="address">Address:</label>
-            <input type="text" required id="address" name="user_address"/>
-          </li>
-          <li>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message"></textarea>
-          </li>
-          <li class="button">
-            <button type="submit">Send your message</button>
-          </li>
-        </ul>
-      </form>
+    <main class="orderform-grid">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/flugame.jpeg" alt="Avatar" style="width:500px;height:500px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Description</h1>
+            <p>Air Jordan 12 "Flu Game" 2016</p>
+            <p>Size: 8 US, 41 EU</p>
+            <p>SKU: 130690002</p> 
+            <p>Colors: Black,Red </p>
+          </div>
+        </div>
+      </div>
       <iframe
-        width="560"
-        height="315"
+        width="840"
+        height="472"
         src="https://www.youtube.com/embed/vzxH4pQCtMI?si=aTdrbpCX6zLX_sJ4&amp;start=2"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
-      ></iframe>
-      <h2>Description:</h2>
-      <p>
-        Air Jordan 12 Retro “Flu Game” 2016 Men’s Size: 8 US, 41 EU. SKU: 130690
-        002 Colors: Black,Red The Air Jordan 12 "Flu Game" is a black and red
-        basketball shoe designed by Nike. It features a black tumbled leather
-        upper with varsity red on the mudguard and outsole. This iconic sneaker
-        has not only lasted long in popularity but it's design also holds with
-        regards to material and build. These could be worn on the court and
-        beyond as a staple in men's streetwear Michael Jordan wore this specific
-        colorway during the 5th game of the NBA Final in 1997. During playing
-        time, Jordan was thought to have been suffering from the flu but later
-        it was revealed that it was food poisoning. Michael and his team, the
-        Chicago Bulls, would eventually win the game!
-      </p>
+      ></iframe>  
+      <section class="order">
+        <h1>Enter order information below!</h1>
+        <form action="/my-handling-form-page" method="post">
+          <ul>
+            <li>
+              <label for="name">Name :</label>
+              <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+              <label for="mail">Email:</label>
+              <input
+                type="email"
+                required
+                id="mail"
+                name="user_email"
+                placeholder="email.@here.com"
+              />
+            </li>
+            <li>
+              <label for="payment">Card:</label>
+              <input
+                type="number"
+                required
+                id="payment"
+                name="user_card"
+              />
+            </li>
+            <li>
+              <label for="address">Address:</label>
+              <input type="text" required id="address" name="user_address"/>
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+              <button type="submit">Send your message</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+      <section class="desc">
+        <h2>Description:</h2>
+        <p>
+          Air Jordan 12 Retro “Flu Game” 2016 Men’s 
+          The Air Jordan 12 "Flu Game" is a black and red
+          basketball shoe designed by Nike. It features a black tumbled leather
+          upper with varsity red on the mudguard and outsole. This iconic sneaker
+          has not only lasted long in popularity but it's design also holds with
+          regards to material and build. These could be worn on the court and
+          beyond as a staple in men's streetwear Michael Jordan wore this specific
+          colorway during the 5th game of the NBA Final in 1997. During playing
+          time, Jordan was thought to have been suffering from the flu but later
+          it was revealed that it was food poisoning. Michael and his team, the
+          Chicago Bulls, would eventually win the game!
+        </p>
+      </section>
+      <div id="feedback"></div>
     </main>
-    <footer>
-      <div class="social">
-        <a href="https://facebook.com" target="_blank">
-          <img src="images/Facebook_icon.png" alt="fb icon" />
-        </a>
-        <a href="https://twitter.com" target="_blank">
-          <img src="images/twitter-x-logo-.png" alt="twitter icon" />
-        </a>
-        <a href="https://instagram.com" target="_blank">
-          <img src="images/Instagram_icon.png.webp" alt="instagram icon" />
-        </a>
-      </div>
+      <footer>
+        <div class="social">
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/Facebook_icon.png" alt="fb icon" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter-x-logo-.png" alt="twitter icon" />
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="images/Instagram_icon.png.webp" alt="instagram icon" />
+          </a>
+        </div>
       <p><a href="site-plan.html">Site Plan</a></p>
       <p>Galan Gear &copy; 2024 - Roger Galan Manzano</p>
     </footer>
@@ -133,3 +141,6 @@
     </script>
   </body>
 </html>
+
+<! -- width="560" -->
+        <! -- height="315" -->
